@@ -14,8 +14,8 @@ class First : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         setHasOptionsMenu(true)
-        val view = inflater.inflate(R.layout.first, container, false)
-        view.findViewById<View>(R.id.button1to2).setOnClickListener {
+        val view = inflater.inflate(R.layout.fragment_first, container, false)
+        view.findViewById<View>(R.id.bnToSecond).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.fragment1to2)
         }
         return view

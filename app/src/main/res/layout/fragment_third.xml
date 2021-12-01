@@ -8,7 +8,7 @@
     android:id="@+id/fragment3">
 
     <android.widget.Button
-        android:id="@+id/button3to1"
+        android:id="@+id/bnToFirst"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -18,13 +18,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.widget.Button
-        android:id="@+id/button3to2"
+        android:id="@+id/bnToSecond"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/to2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button3to1"/>
+        app:layout_constraintTop_toBottomOf="@id/bnToFirst"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

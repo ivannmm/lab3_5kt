@@ -11,11 +11,11 @@ class Third : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState:
     Bundle?): View {
         setHasOptionsMenu(true)
-        val view = inflater.inflate(R.layout.third, container, false)
-        view.findViewById<View>(R.id.button3to1).setOnClickListener {
+        val view = inflater.inflate(R.layout.fragment_third, container, false)
+        view.findViewById<View>(R.id.bnToFirst).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.fragment3to1)
         }
-        view.findViewById<View>(R.id.button3to2).setOnClickListener {
+        view.findViewById<View>(R.id.bnToSecond).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.fragment3to2)
         }
         return view
